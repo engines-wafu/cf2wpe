@@ -2,7 +2,7 @@
 A script to create waypoint editor input files.
 
 ## Dependencies
-This script assumes you are using [Combat Flite!](https://www.combatflite.com/) and the latest alpha of [DCS Waypoint Editor!](https://github.com/Santi871/DCSWaypointEditor/releases/tag/v1.0.0b1).  To run the script you will need either [Octave!](https://www.gnu.org/software/octave/) or Matlab, although the latter has not been tested.
+This script assumes you are using [Combat Flite](https://www.combatflite.com/) and the latest alpha of [DCS Waypoint Editor](https://github.com/Santi871/DCSWaypointEditor/releases/tag/v1.0.0b1).  To run the script you will need either [Octave](https://www.gnu.org/software/octave/) or Matlab, although the latter has not been tested.
 
 ## Installation
 Download the cf2wpe.m file to your local computer and open with Octave.  Run the script using either the graphical user interface or command line interface.
