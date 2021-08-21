@@ -11,7 +11,7 @@ if input_file != 2
 endif
 
 coords = dlmread (input_file, ";", "B2:C78" );
-finger = strtrunc (hash ("md5", input_file), 4);
+finger = strtrunc (hash ("md5", mat2str (coords)), 4);
 
 # Create waypoint objects.
 
