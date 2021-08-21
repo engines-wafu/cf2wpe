@@ -29,18 +29,12 @@ for i = 1:n
   wpe.waypoints(i).longitude = coords(i,2);
 endfor
 
-wpe.name = strcat ("CF_to_WE-", datestr(date(),"yyyymmdd"), "-", finger);
+wpe.name = strcat ("cf2wpe-", datestr(date(),"yyyymmdd"), "-", finger);
 wpe.aircraft = "harrier";
 
 # Write output file.
 
-output_file = input("Output filename:\n", "s");
-
-if output_file != 2
-  printf ("Not a valid file\n");
-  printf ("Assuming default filename\n");
-  output_file = strcat (wpe.name, ".json");
-endif
+output_file = strcat (wpe.name, ".json");
 
 fid = fopen (output_file, "w");
 fputs (fid, toJSON (wpe));
